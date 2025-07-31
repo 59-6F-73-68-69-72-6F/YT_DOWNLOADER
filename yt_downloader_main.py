@@ -81,7 +81,6 @@ def DownLoader(video_url : str, audio_url: str, output_path: str, yt_video: Yout
         if os.path.exists(temp_audio_file):
             os.remove(temp_audio_file)
 
-
 def BarLoader():
     size = 40
     for i in range(1,101):
