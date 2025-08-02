@@ -1,6 +1,6 @@
 ###############
 # YT DOWNLOADER
-# DATE : 31 JULY 2025"for
+# DATE : 31 JULY 2025
 # MADE : RUDY LETI
 ###############
 
@@ -22,7 +22,6 @@ __  ________  ___                  __             __
 
 temp_audio_file = "temp/temp_audio.webm"
 temp_video_file = "temp/temp_video.mp4"
-
 
 def collect_resolutions(url:str) -> tuple:
     format_selector = "bestvideo[ext=mp4]+bestaudio[ext=webm]/best"
