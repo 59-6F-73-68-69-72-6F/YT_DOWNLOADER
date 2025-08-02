@@ -8,7 +8,6 @@ import os
 import re
 import time
 import urllib.request
-from pprint import pprint
 
 import ffmpeg # pip install ffmpeg-python  +  Download : https://ffmpeg.org/download.html
 from yt_dlp import YoutubeDL # pip install yt-dlp
