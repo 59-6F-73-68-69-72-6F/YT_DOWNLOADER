@@ -99,7 +99,7 @@ def barLoader():
         blocs = int(i * size / 100)
         bar  = "█"* blocs + "_" * (size-blocs)
         print(f"\r[{bar}] {i}%", end="", flush=True)
-        time.sleep(0.015)
+        time.sleep(0.01)
 
 
 if __name__ == "__main__":
@@ -107,6 +107,10 @@ if __name__ == "__main__":
     url = input("Type or copy/paste the Youtube url you want: ")
     resolutions = collect_resolutions((url))
     chosen_quality = int(input(f"Choose your video quality, {resolutions[0]}: "))
+   
+    if chosen_quality not in resolutions[0]:
+        raise ValueError(f"PLEASE TYPE A NUMBER IN THE LIST {resolutions[0]}")
+    
     data = parse_video_info(url,resolutions[1])
     filtred_data = filter_quality(data[1],chosen_quality)
     user_choice = int(input("\nMake your choice:"))
