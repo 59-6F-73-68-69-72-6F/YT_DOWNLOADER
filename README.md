@@ -41,5 +41,5 @@ Before running the script, you need to have the following installed:
 2.  Navigate to the directory where `yt_downloader_main.py` is located.
 3.  Run the script with the command: `python yt_downloader_main.py`
 4.  When prompted, paste the full YouTube video URL and press **Enter**.
-5.  Choose your desired quality by typing `1` for Best Quality or `2` for Low Quality, then press **Enter**.
+5.  Choose your desired quality, then press **Enter**.
 6.  Wait for the script to finish. The final `.mp4` file will be saved in the same directory.
