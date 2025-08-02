@@ -109,7 +109,7 @@ if __name__ == "__main__":
     chosen_quality = int(input(f"Choose your video quality, {resolutions[0]}: "))
    
     if chosen_quality not in resolutions[0]:
-        raise ValueError(f"PLEASE TYPE A NUMBER IN THE LIST {resolutions[0]}")
+        raise ValueError(f"PLEASE TYPE A NUMBER FROM THE LIST {resolutions[0]}")
     
     data = parse_video_info(url,resolutions[1])
     filtred_data = filter_quality(data[1],chosen_quality)
