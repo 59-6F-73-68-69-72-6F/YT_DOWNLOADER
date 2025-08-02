@@ -2,7 +2,8 @@
 
 A simple and efficient command-line tool to download YouTube videos directly to your computer in your desired resolution.
 
- <!-- You can replace this with a real screenshot or GIF -->
+<img width="619" height="173" alt="image" src="https://github.com/user-attachments/assets/6f991fcd-d417-43c2-8888-0f3cd630249b" />
+
 
 ## Description
 
