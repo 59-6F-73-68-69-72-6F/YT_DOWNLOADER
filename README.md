@@ -1,19 +1,20 @@
 # YT Downloader⏬
 
-A simple and efficient command-line tool to download YouTube videos directly to your computer.
+A simple and efficient command-line tool to download YouTube videos directly to your computer in your desired resolution.
 
- <!-- You can replace this with a real screenshot -->
+ <!-- You can replace this with a real screenshot or GIF -->
 
 ## Description
 
-This Python script provides a straightforward way to download any YouTube video. It prompts the user for a video URL and a quality preference, then handles the entire process of downloading the video and audio streams, merging them into a single high-quality MP4 file, and saving it locally.
+This Python script provides a straightforward way to download any YouTube video. It fetches all available resolutions, lets you choose one, and then downloads the highest quality video and audio for that resolution. It uses `yt-dlp` for fetching information and downloading, and `FFmpeg` to merge the video and audio streams into a single high-quality MP4 file.
 
 ## Features
 
 *   **Easy to Use**: Simple command-line interface.
-*   **Quality Selection**: Choose between the best available quality or a lower resolution (720p) to save disk space.
+*   **Quality Selection**: Automatically lists available video resolutions (e.g., 480p, 720p, 1080p) for you to choose from.
+*   **Format Selection**: If multiple formats are available for a resolution (e.g., different frame rates), you can pick the one you prefer.
 *   **Automatic Merging**: Downloads video and audio separately and uses FFmpeg to merge them into a complete video file.
-*   **Smart Naming**: Automatically names the final file using the video's title and the uploader's name (e.g., `Video Title - Uploader Name.mp4`).
+*   **Smart Naming**: Automatically names the final file using the video's title and the uploader's name (e.g., `Video Title - Uploader Name.mp4`), sanitizing it for compatibility with your filesystem.
 *   **Clean Operation**: Temporary files created during the process are automatically deleted upon completion.
 *   **Progress Indicators**: See the status of the download and merging process, complete with a final progress bar.
 
@@ -32,7 +33,6 @@ Before running the script, you need to have the following installed:
     ```
 4.  **FFmpeg**: The core multimedia framework for processing video and audio.
     *   **You must download FFmpeg separately** from the official website: https://ffmpeg.org/download.html
-    *   After downloading, ensure the `ffmpeg` executable is available in your system's PATH.
 
 ## How to Use
 
