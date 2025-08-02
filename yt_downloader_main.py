@@ -41,7 +41,7 @@ def collect_resolutions(url:str) -> tuple:
                 resolutions.add(n["height"])
     return sorted(resolutions),yt_video
 
-def parse_video_info(url:str,user_choice:int,yt_video:YoutubeDL) -> tuple:
+def parse_video_info(url:str,yt_video:YoutubeDL) -> tuple:
     print("\rExtracting video info...\n", end="")
     info_dict = yt_video.extract_info(url, download=False)
     raw_title = f"{info_dict['title'].strip()} - {info_dict['uploader'].strip()}"
